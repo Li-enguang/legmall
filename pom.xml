@@ -10,11 +10,14 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>legmall-common</module>
         <module>legmall-coupon</module>
         <module>legmall-member</module>
         <module>legmall-order</module>
         <module>legmall-product</module>
         <module>legmall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 
 </project>
