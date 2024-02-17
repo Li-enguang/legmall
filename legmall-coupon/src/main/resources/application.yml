@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username: daopwkAe12
+    password: hksfhlwhioksnRa1dfcv
+    url: jdbc:mysql://1.1.1.1:3309/legmall_coupon?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: legmall-coupon
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+server:
+  port: 8010
