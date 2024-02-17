@@ -9,6 +9,12 @@
     <description>商城-聚合服务</description>
     <packaging>pom</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <modules>
         <module>legmall-common</module>
         <module>legmall-coupon</module>
@@ -16,8 +22,12 @@
         <module>legmall-order</module>
         <module>legmall-product</module>
         <module>legmall-ware</module>
+        <module>legmall-gateway</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
+        <module>legmall-third-party</module>
+        <module>legmall-search</module>
+        <module>legmall-auth-server</module>
     </modules>
 
 </project>

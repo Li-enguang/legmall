@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: legmall-search
+
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: 61f46032-fe6f-402b-b0ee-b9e4dd3c11c7
+
+

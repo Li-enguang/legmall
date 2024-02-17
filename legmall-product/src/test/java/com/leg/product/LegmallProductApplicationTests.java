@@ -1,30 +1,29 @@
 package com.leg.product;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.leg.product.entity.BrandEntity;
-import com.leg.product.service.BrandService;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
+import java.io.FileNotFoundException;
 
 @SpringBootTest
 public class LegmallProductApplicationTests {
 
-    @Autowired
-    BrandService brandService;
     @Test
-    public void contextLoads() {
-//        BrandEntity entity = new BrandEntity();
-//        entity.setDescript("1");
-//        entity.setName("6华为");
+    public void contextLoads() throws FileNotFoundException {
+//        String endpoint = "oss-cn-beijing.aliyuncs.com";
+//        // 填写Bucket名称，例如examplebucket。
+//        String accessKeyId = "LTAI5tDS5viBmPMtLi6YjhbH";
+//        String accessKeySecret = "EK8BuS9PpwneXS0s8D1qF9H8A44ssV";
+//        String bucketName = "legmall";
+//        String objectName = "test1.jpg";
+//        String filePath = "C:\\java\\test.jpg";
 //
-//        brandService.save(entity);
-//        System.out.println(66666);
+//        // 创建OSSClient实例。
+//        OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
+//
+//        // 上传文件。
+//        InputStream inputStream = new FileInputStream(filePath);
+//        PutObjectResult result = ossClient.putObject(bucketName, objectName, inputStream);
 
-        List<BrandEntity> list = brandService.list(new QueryWrapper<BrandEntity>().eq("brand_id", 1L));
-        list.forEach(r -> System.out.println(r));
     }
-
 }
